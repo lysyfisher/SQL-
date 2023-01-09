@@ -1,0 +1,25 @@
+CREATE TABLE In_The_Mood_For_Love (id INTEGER PRIMARY KEY, name  TEXT, genre TEXT, Quantity INTEGER, Aisle INTEGER, price INTEGER);
+
+INSERT INTO In_The_Mood_For_Love VALUES (1, "People we meet on vacation", "Romance", 10, 5, 16.99);
+INSERT INTO In_The_Mood_For_Love VALUES (2, "Beach Read", "Romance", 20, 5, 16.99);
+INSERT INTO In_The_Mood_For_Love VALUES (3, "Vegetable Illustrated", "Cookbook", 8, 2, 32.99);
+INSERT INTO In_The_Mood_For_Love VALUES (4, "Moon List", "Astrology", 14, 1, 15.99);
+INSERT INTO In_The_Mood_For_Love VALUES (5, "The Nine", "Historical Non-Fiction", 10, 7, 25.99);
+INSERT INTO In_The_Mood_For_Love VALUES (6, "Buy Yourself the Fucking Lillies", "Self-Help", 5, 1, 17.99); 
+INSERT INTO In_The_Mood_For_Love VALUES (7, "All About Love", "Self-Help", 6, 1, 17.99);
+INSERT INTO In_The_Mood_For_Love VALUES (8, "A Court of Thorns & Roses", "Fantasy", 20, 7, 18.99); 
+INSERT INTO In_The_Mood_For_Love VALUES (9, "It", "Horror", 14, 6, 21.99);
+INSERT INTO In_The_Mood_For_Love VALUES (10, "Revelator", "Horror", 9, 6, 21.99); 
+INSERT INTO In_The_Mood_For_Love VALUES (11, "Girl on the Train", "Thriller", 8, 6, 21.99);
+INSERT INTO In_The_Mood_For_Love VALUES (12, "Anything But Ordinary", "Romance", 8, 5, 15.99); 
+INSERT INTO In_The_Mood_For_Love VALUES (13, "Collected Poems of Emily Dickinson", "Poetry", 10, 3, 17.99);
+INSERT INTO In_The_Mood_For_Love VALUES (14, "Luster", "Fiction", 10, 8, 17.99);
+INSERT INTO In_The_Mood_For_Love VALUES (15, "Seven Days In June", "Romance", 20, 5, 15.99);
+SELECT * FROM In_The_Mood_For_Love;
+
+SELECT genre, SUM(quantity) FROM in_the_mood_for_love GROUP BY genre;
+
+SELECT * FROM In_The_Mood_For_Love ORDER BY price;
+
+
+
